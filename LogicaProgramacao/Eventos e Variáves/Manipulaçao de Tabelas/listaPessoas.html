@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #14029a;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    #tabelaCadastro {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        border-radius: 8px;
+        overflow: hidden; 
+    }
+
+    #tabelaCadastro thead {
+        background-color: #007bff;
+        color: white;
+        text-align: left;
+    }
+
+    #tabelaCadastro th, #tabelaCadastro td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+   
+    #tabelaCadastro tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    
+    #tabelaCadastro tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    
+    input {
+        padding: 8px;
+        margin-right: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 8px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+</style>
+<div><button type="button" onclick="trocarFundo()">Trocar Cor da Página</button></div>
+
+</head>
+<body style="background-color: white;">
+    <h1>Adição de alunos a turma</h1>
+    <div class = "forms">
+        <form action="">
+            <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno">
+            <input type="text" id="matriculaAluno" placeholder="Digite a matrícula do aluno">
+            <input type="text" id="emailAluno" placeholder="Digite o email do aluno">
+            <button type="button" onclick="cadastrarAluno()">Cadastrar</button>
+        </form>
+    </div>
+    <div>
+        <table id = "tabelaCadastro">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="manipulacaoListas.js"></script>
+</body>
+</html>

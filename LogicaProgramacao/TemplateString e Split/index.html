@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>Formulário de Cadastro</h1>
+    <p>Digite suas informações abaixo para seguirmos com o cadastro</p>
+    <form action="">
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
+        <input type="text" id="email" placeholder="Digite seu email">
+        <button type="submit" onclick="enviarDados()">Enviar</button>
+    </form>
+
+    <p id="textoAlterado">Esse texto pode ser alterado clicando no botão abaixo</p>
+    <button onclick="alterarTexto()">Alterar Texto</button>
+    <h2>Verificando dados do seu email</h2>
+    <button onclick="separarValores()">Verificar Email</button>
+    <p id="resultadoEmail"></p>
+    </div>
+    <script src = "coletor.js"></script>
+</body>
+</html>
